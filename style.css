@@ -1,60 +1,121 @@
+html{
+    height: 100%;
+}
 body{
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
     font-family: 'Montserrat', sans-serif;
-    margin: auto;
-    
+    height: 100%;
 }
 #container{
-    background-color:#00f2ee ;
-    height: 200px;
+    height: 33%;
     position: relative;
+    background-color:blueviolet;
+}
+#container img{
+    position: absolute;
+    height: 90%;
+    border-radius: 10%;
+    left: 70%;
+    bottom: 0;
 }
 #info{
     width: 40%;
     position: absolute;
-    left: 10%;
+    left: 7%;
 }
-#moi{
-    position: absolute;
-    right: 10%;
-    border-radius: 10%;
+#info h4,span{
+    background-color: rgb(11, 237, 163);
+    width: 37%;
+    padding: 1%;
 }
 #competences{
-    position: relative;
-    height: 220px;
+    display: flex;
 }
 #presentation{
-    width: 60%;
-    position: absolute;
-    left: 30%;
-    top: 10%;
+    width: 40%;
 }
-.fas{
-    position: absolute;
-    top: 20%;
-    left:15%;
-}
-#reseaux{
-    height: 150px;
-    background-color: #00f2ee ;
+#icon{
+    width: 50%;
     position: relative;
 }
-#reseaux h1{
+.fas.fa-code.fa-5x{
     position: absolute;
-    top: 15%;
-    left: 10%;
+    top:20%;
+    left: 40%;
 }
-#reseaux p{
+#reseaux{
+    background-color:blueviolet;
+    position: relative;
+    height: 27%;
+}
+a{
+    color: black;
+    text-decoration: none;
+    margin-left: 30px;
+}
+#presentation a{
+    background-color:blueviolet;
+}
+#txt{
     position: absolute;
-    top:45%;
-    left: 10%;
+    left: 5%;
+    top: 2%;
 }
 #logo{
-    color: black;
     position: absolute;
-    left: 60%;
-    top: 15%;
+    left: 65%;
+    top:30%
 }
-#logo a{
-    color: black;
+
+@media screen and (max-width: 770px){
+    #info{
+        width: 74%;
+    }
+    #info p{
+        width: 86%;
+    }
+    #container img{
+        height: 53%;
+    }
+    #icon{
+        width:37%;
+    }
+    #presentation{
+        width: 53%;
+    }
+}
+@media screen and (max-width: 770px){
+    #container img{
+        display: none;
+    }
+    #info p {
+        width: 120%;
+    }
+    #icon{
+        display: none;
+    }
+    #logo {
+        left: 0%;
+        top: 63%;
+    }
+    #presentation {
+        width: auto;
+    }
+}
+@media screen and (max-width: 375px){
+    #container{
+        height: 53%;
+    }
+    #logo{
+        font-size: 10px;
+        left: 47%;
+    }
+    #txt{
+        top:-17px;
+    }
+    #container p{
+        display: none;
+    }
 }
